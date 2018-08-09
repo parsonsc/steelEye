@@ -1,0 +1,32 @@
+// SteelEye
+// Pie chart styles 
+
+.piechart {
+
+}
+// Homepage piecharts
+
+.regulatory_duties .piechart {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  bottom: -9%;
+  right: 0%;
+}
+
+
+.single-advice .piechart_green {
+	    width: 450px;
+    height: 450px;
+    right: 0%;
+    position: absolute;
+    top: -5%;
+}
+
+.single-advice .piechart_blue {
+	    width: 450px;
+    height: 450px;
+    left: 0%;
+    position: absolute;
+    bottom: 0%;
+}

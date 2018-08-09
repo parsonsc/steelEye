@@ -1,0 +1,76 @@
+// SteelEye
+// Search
+
+
+.astm-search-menu {
+	position: relative;
+	top: -680px;
+}
+
+
+.search-form {
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		border-radius: 5px;
+		background: #FFD65C;
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 14px;
+		font-weight: bold;
+		padding: 12px 18px;
+		border-style: solid;
+		border: none;
+	}
+
+	[type="search"] {
+		-webkit-appearance: textfield;
+		outline-offset: -10px;
+		border-radius: 5px;
+		height: 38px;
+		margin-right: 7px;
+		padding: 0 10px 0 10px;
+		width: 170px;
+		font-size: 14px;
+		border-style: solid;
+		border: none;
+	}
+}
+.search_results {
+	padding: 100px 0;
+	overflow: hidden;
+}
+.results_container {
+	width: 820px;
+	margin: 0 auto;
+}
+
+
+// Individual result
+.search_result {
+	position: relative;
+	overflow: hidden;
+	padding: 0 0 40px;
+}
+.search_result h2 a {
+	color: $blue;
+	@include transition(all 0.2s ease-in-out);
+	&:hover {
+		text-decoration: none;
+		opacity: 0.7;
+	}
+}
+.search_result p {
+	color: $blue;
+	font-family: $din;
+}
+
+@include respond-to(mobile) { 
+
+	.results_container {
+		width: 100%;
+		padding: 0 35px;
+		margin: 0 auto;
+	}
+
+}

@@ -1,0 +1,79 @@
+// SteelEye
+// Resources 
+
+.banner {
+
+}
+
+// Hero banner 
+.hero_banner {
+	padding: 120px 0 100px;
+	background: url('../images/layout/banner.jpg') 0 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative; 
+	z-index: 1;
+}
+.hero_banner h1 {
+	color: white;
+	width: 880px;
+	margin: 0 auto;
+	font-family: $din;
+	font-weight: normal;
+	font-size: 45px;
+}
+.hero_banner .demo_btn {
+	float: none;
+	display: inline-block;
+	margin: 10px auto 0;
+}
+
+// Homepage banner 
+.homepage_banner {
+	text-align: center;
+	padding: 0 50px;
+	background: none;
+	position: relative;
+	z-index: 5;
+}
+.homepage_banner h1 {
+	color: white;
+	font-size: 45px;
+	font-family: $din;
+	font-weight: 400;
+}
+
+
+
+
+// Tablet Styles
+@include respond-to(tablet) {
+	
+}
+
+// Mobile Styles
+@include respond-to(mobile) { 
+	// Hero banner 
+	.hero_banner {
+		padding: 180px 35px 100px;
+	}
+	.homepage_banner h1,
+	.hero_banner h1 {
+		width: 100%;
+		font-size: 35px;
+		font-family: $din;
+		font-weight: 400;
+		margin: 0 0 40px;
+	}
+	.hero_banner a.cta {
+		display: inline-block!important;
+	}
+	.homepage_banner {
+		padding: 116px 35px 0;
+		background: url('../images/layout/banner.jpg') 0 0 no-repeat;
+		background-size: cover;
+	}
+	.homepage_banner .cta.mobile_only {
+		display: inline-block!important;
+	}
+}

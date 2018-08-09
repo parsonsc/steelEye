@@ -1,0 +1,210 @@
+// SteelEye
+// About Us
+
+
+.about_us {
+
+}
+
+// Intro section
+.about_us .intro_section {
+	position: relative;
+	padding: 100px 0 180px;
+}
+.about_us .intro_section .intro_content {
+	width: 510px;
+	float: right;
+	color: $blue;
+	margin-right: 100px;
+}
+
+.about_us .intro_section .piechart {	
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	top: 16%;
+	left: 4%;
+	z-index: -1;
+}
+
+.about_us .regulatory_duties .piechart {
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	top: 45%;
+	right: 4%;
+	// z-index: -1;
+}
+
+.page-template-about_us .regulatory_duties_block a.read_more {
+	color: white!important;
+	font-size: 14px;
+	@include din_bold;
+	text-decoration: underline;
+}
+.page-template-about_us .regulatory_duties_block a.read_more:hover {
+	text-decoration: none;
+}
+
+// Meet the team
+.teams {
+
+}
+.teams header {
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+.teams .multitab-section ul {
+	margin-bottom: 60px;
+}
+.teams .advice_grid li .team_member_inner{
+	background: $blue;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.teams .advice_grid li.team_member {
+	margin: 0 0 15px 0;
+	cursor: pointer;
+}
+.teams .advice_grid li.team_member .team_member_details {
+	padding: 25px;
+	color: white;
+	position: inherit;
+	height: auto;
+}
+.teams .advice_grid li.team_member .team_member_details a {
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+	@include transition(all 0.2s ease-in-out);
+}
+
+.teams .advice_grid li.team_member .team_member_details a:hover span,
+.teams .advice_grid li.team_member .team_member_details a span {
+	color: white;
+	text-decoration: none;
+	@include transition(all 0.2s ease-in-out);
+}
+.teams .advice_grid li.team_member .team_member_details a span:hover,
+.teams .advice_grid li.team_member .team_member_details a h3:hover {
+	opacity: 0.7;
+}
+.teams .advice_grid li.team_member .team_member_details h3 {
+	font-size: 24px;
+	color: white;
+	display: block;
+	margin: 0 0 15px;
+}
+
+.teams .advice_grid li.team_member .contact_links {
+	position: absolute;
+	bottom: 25px;
+	left: 55%;
+}
+.member_modal_block .contact_links ul,
+.teams .advice_grid li.team_member .contact_links ul {
+	padding: 0;
+	margin: 0;
+}
+.member_modal_block .contact_links ul li,
+.teams .advice_grid li.team_member .contact_links ul li {
+	margin: 0 15px 0 0;
+}
+.member_modal_block .contact_links ul li a,
+.teams .advice_grid li.team_member .contact_links ul li a {
+	color: white;
+	font-size: 24px;
+	@include transition(all 0.2s ease-in-out);
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+
+// Teams modal styles 
+.member_modal_block img {
+	border-radius: 5px;
+}
+.member_modal_block {
+	color: $blue;
+}
+.member_modal_block h3.title {
+	margin: 30px 0 0px;
+}
+.member_modal_block span.job_title {
+	font-size: 15px;
+	font-family: $din;
+}
+.member_modal_block .contact_links {
+	padding: 15px 0 0;
+}
+.member_modal_block .contact_links ul li {
+	display: inline-block;
+}
+.member_modal_block .contact_links ul li a {
+	color: $blue;
+}
+
+.member_modal_block p {
+	font-family: $din;
+	font-size: 15px;
+}
+// Tablet Styles
+@include respond-to(tablet) {
+	
+}
+
+// Mobile Styles
+@include respond-to(mobile) { 
+	// Intro section
+	.about_us .intro_section {
+		position: relative;
+		padding: 0 0 40px;
+	}
+	.about_us .intro_section:before {
+		content: "";
+	position: absolute;
+		background: url('../images/graphic1.svg') 0px 0px no-repeat;
+		background-size: 100%;
+		width: 320px;
+		height: 320px;
+		top: -26%;
+		left: -5%;
+		opacity: 0.5;
+	}
+
+	.about_us .intro_section .intro_content {
+		width: 100%;
+		padding: 0 35px;
+		margin-right: 0;
+	}
+
+	.about_us .regulatory_duties {
+		padding: 0;
+	}
+
+	.about_us .multitab-section {
+	    width: 81%;
+	    margin: 0 35px 0;
+	}
+	.about_us .teams .advice_grid li.team_member {
+		padding: 0;
+		width: 100%;
+	}
+	.teams .advice_grid li.team_member .team_member_details {
+	    height: auto;
+	}
+	.teams .advice_grid li.team_member .contact_links {
+	    position: relative;
+	    bottom: auto;
+	    left: auto;
+	    padding: 30px 0 0;
+	}
+	.teams .multitab-section ul {
+    	margin-bottom: 0px;
+	}
+	.teams .multitab-section ul.multitab-widget-content-tabs-id {
+		margin-bottom: 40px;
+	}
+}

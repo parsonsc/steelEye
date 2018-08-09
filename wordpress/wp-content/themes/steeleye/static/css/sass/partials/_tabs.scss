@@ -1,0 +1,98 @@
+// SteelEye
+// Tabs 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility
+}
+
+
+
+.multitab-section {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #ADADAD;
+}
+
+
+.multitab-widget {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 400px;
+}
+
+.multitab-widget li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left
+}
+
+.multitab-widget li a {
+  color: $blue;
+  display: block;
+  padding: 15px 0 0;
+  margin-right: 60px;
+  font-size: 18px;
+  text-decoration: none;
+  border-top: 5px solid transparent;
+}
+
+.multitab-tab {
+  // width: 33.3%;
+}
+
+.multitab-section h2,
+.multitab-section h3,
+.multitab-section h4,
+.multitab-section h5,
+.multitab-section h6 {
+  display: none;
+}
+
+.multitab-widget li a.multitab-widget-current {
+  padding-bottom: 20px;
+  margin-top: 0;
+  // background: #fff;
+  color: $blue;
+  text-decoration: none;
+  border-top: 5px solid $blue;
+  font-size: 18px;
+}
+
+
+.multitab-widget-content {
+	clear: both;
+}
+.multitab-widget-content.advice,
+.multitab-widget-content.news {
+  
+}
+.multitab-widget-content header {
+	margin: 60px 0;
+}
+.multitab-widget-content header h2 {
+	display: block;
+  font-size: 30px;
+  max-width: 733px;
+}
+
+//////////
+// Tablet Styles
+@include respond-to(tablet) {
+	
+}
+
+// Mobile Styles
+@include respond-to(mobile) { 
+
+}

@@ -1,0 +1,74 @@
+// Steeleye
+// Landing Page Styling
+
+// Basic banner 
+.basic_banner {
+	text-align: center;
+	padding: 100px 0 0;
+}
+.basic_banner h1 {
+	font-size: 45px;
+	font-family: $din;
+	font-weight: 400;
+	margin: 0;
+}
+
+
+.basic_content {
+	width: 825px;
+	margin: 0 auto;
+	color: $blue;
+}
+.basic_content:before {
+	// content: "";
+	// position: absolute;
+	// background: url('../images/graphic1.svg') 0px 0px no-repeat;
+	// background-size: 100%;
+	// width: 450px;
+	// height: 450px;
+	// top: 4%;
+ //    right: -6%;
+ //    z-index: -1;
+}
+.basic_content:after {
+	// content: "";
+	// position: absolute;
+	// background: url('../images/graphic2.svg') 0px 0px no-repeat;
+	// background-size: 100%;
+	// width: 450px;
+	// height: 450px;
+	// bottom: 10%;
+	// left: 0%;
+	// z-index: -1;
+}
+.basic_content strong {
+	font-size: 24px;
+	@include din_bold;
+}
+.basic_content a {
+	@include din_bold;
+	color: $blue;
+	text-decoration: underline;
+}
+
+
+// Mobile Styles
+@include respond-to(mobile) { 
+	.basic_banner {
+		padding: 0 35px;
+	}
+	.basic_banner h1 {
+		font-size: 35px;
+	}
+	.basic_content {
+		width: 100%;
+		padding: 0 25px;
+	}
+	.basic_content:before {
+		opacity: 0.5;
+	}
+	.basic_content:after {
+		opacity: 0.5;
+		bottom: 14%;
+	}
+}

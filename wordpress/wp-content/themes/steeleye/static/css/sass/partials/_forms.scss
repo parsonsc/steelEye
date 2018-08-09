@@ -1,0 +1,91 @@
+// SteelEye
+// Form Styling
+
+
+
+form {
+
+}
+
+form .form_item {
+	width:  100%;
+	float: left;
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+form .form_item input,
+form .form_item textarea {
+	width: 100%;
+	padding: 20px 15px;
+	background: $bg_grey;
+	box-shadow: none;
+	border-radius: 5px;
+	border: none;
+	font-size: 18px;
+	font-family: $din;
+}
+
+form button.button {
+	@include cta;
+	border: none;
+	box-shadow: none;
+	padding: 10px 35px;
+	    margin: 25px 0px 0 10px;
+}
+
+::-webkit-input-placeholder { 
+  color: #999999;
+}
+::-moz-placeholder { 
+  color: #999999;
+}
+:-ms-input-placeholder { 
+  color: #999999;
+}
+:-moz-placeholder { 
+  color: #999999;
+}
+
+// Password reminder
+.password_reminder a {
+	color: $blue;
+	@include din_bold;
+	text-decoration: underline;
+	@include transition(all 0.2s ease-in-out);
+}
+.password_reminder a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.submit_terms {
+	color: $blue;
+	font-family: $din;
+}
+.back_link,
+.submit_terms a {
+	color: $blue;
+	@include din_bold;
+	text-decoration: underline;
+	@include transition(all 0.2s ease-in-out);
+}
+.back_link:hover,
+.submit_terms a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+	color: $blue;
+}
+.back_link {
+	display: block;
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+
+// Mobile Styles
+@include respond-to(mobile) { 
+	form {
+		overflow-y: scroll;
+	}
+}
+

@@ -1,0 +1,50 @@
+// Steeleye
+// Pagination
+
+.pagination_container {
+	margin-top: 20px;
+	overflow: hidden;
+}
+.pagination_container ul {
+	float: right;
+}
+.pagination_container ul li {
+	display: inline-block;
+}
+.pagination_container ul li a {
+	color: $blue;
+	margin-right: 5px;
+	display: block;
+}
+.pagination_container ul li.active a {
+	@include din_bold;
+}
+
+.pagination_container ul li.pagination_controls {
+	// width: 23px;
+}
+.pagination_container ul li.pagination_controls.pagination_next {
+	margin-left: 10px;
+
+}
+.pagination_container ul li.pagination_controls.pagination_next a {
+	// margin-right: 0;
+}
+.pagination_container ul li.pagination_controls.pagination_next img {
+	height: 18px;
+}
+
+.pagination_controls.last img {
+	width: 20px;
+	height: 18px;
+}
+
+
+@include respond-to(mobile) {
+	.pagination_container {
+		padding: 0 35px;
+	}
+	.pagination_container ul li {
+		padding: 0!important;
+	}
+}

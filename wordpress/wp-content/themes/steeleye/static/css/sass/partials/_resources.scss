@@ -1,0 +1,268 @@
+// SteelEye
+// Resources 
+
+.resources {
+	position: relative;
+	padding: 60px 0 80px;
+}
+.resources_container:before {
+	// content: "";
+	// position: absolute;
+	// background: url('../images/graphic2_v2.png') 0px 0px no-repeat;
+	// background-size: 100%;
+	// width: 400px;
+	// height: 400px;
+	// top: 11%;
+ //    right: 4%;
+ //    z-index: -1;
+}
+.resource_hero_banner {
+	position: relative;
+}
+.page-template-resources .resource_hero_banner .piechart {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 72%;
+    right: 4%;
+    z-index: -1;
+}
+
+
+// Advice - Advice list & advice artilce page styings 
+.advice {
+
+}
+
+// Advice grid 
+.advice_grid {
+
+}
+.advice_grid li {
+	display: inline-block;
+	margin: 0 0 40px;
+}
+.advice_article_block {
+	padding-left: 0;
+}
+.advice_grid .advice_article_block a {
+	color: $blue;
+}
+.advice_grid .advice_article_block a h3 {
+	display: block;
+	font-size: 14px;
+	color: $blue;
+	@include transition(all 0.2s ease-in-out);
+}
+.advice_grid .advice_article_block a:hover,
+.advice_grid .advice_article_block a h3:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+.advice_grid .advice_article_block a.read_more {
+	font-size: 12px;
+	@include din_bold;
+	color: $cyan;
+	@include transition(all 0.2s ease-in-out);
+}
+.advice_grid .advice_article_block a.read_more:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+.multitab-widget-content header a {
+	color: $blue;
+	text-decoration: underline;
+	@include din_bold;
+}
+
+// News News list & news article page styling 
+.news {
+
+}
+.news_grid {
+
+}
+.news_grid li {
+	display: inline-block;
+	margin: 0 0 40px;
+}
+.news_grid .news_article_block {
+	padding-left: 0px;
+}
+.news_grid .news_article_block a h3 {
+	display: block;
+	color: $blue;
+	font-size: 15px;
+	@include transition(all 0.2s ease-in-out);
+}
+.news_grid .news_article_block a,
+.news_grid .news_article_block a h3:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+.news_grid .news_article_block a.read_more {
+	font-size: 12px;
+	@include din_bold;
+	color: $cyan;
+	@include transition(all 0.2s ease-in-out);
+}
+
+.news_grid .news_article_block a.read_more:hover {
+	opacity: 0.7;
+	text-decoration: none;
+
+}
+.news_grid .news_article_block p.date {
+	font-size: 12px;
+	color: #999;
+}
+
+.press header {
+	max-width: 615px;
+}
+
+
+// Advice page 
+.advice .intro_section {
+	padding-top: 60px;
+	position: relative;
+}
+.advice .intro_section .piechart_blue {
+	top: 63%;
+	right: auto;
+	left: -4%;
+}
+.news .intro_section:before,
+.advice .intro_section:before {
+	// content: "";
+	// position: absolute;
+	// background: url('../images/graphic2.svg') 0px 0px no-repeat;
+	// background-size: 100%;
+	// width: 400px;
+	// height: 400px;
+	// top: 17%;
+ //    right: 4%;
+ //    z-index: -1;
+}
+.news .intro_section:after,
+.advice .intro_section:after {
+	// content: "";
+	// position: absolute;
+	// background: url('../images/graphic1.svg') 0px 0px no-repeat;
+	// background-size: 100%;
+	// width: 400px;
+	// height: 400px;
+	// bottom: -2%;
+ //    left: 4%;
+ //    z-index: -1;
+}
+.resource_article .intro_content {
+	width: 615px;
+	margin: 0 auto;
+	z-index: 4;
+}
+.download_case_study {
+	padding-top: 25px;
+}
+.download_case_study h3 {
+	font-family: $din;
+	font-weight: 400;
+	font-size: 30px;
+}
+.download_case_study .download p {
+	color: $blue;
+	@include din_bold;
+}
+
+// Tablet Styles
+@include respond-to(tablet) {
+	
+}
+
+// Mobile Styles
+@include respond-to(mobile) { 
+
+	.resources_container:before {
+		content: "";
+	position: absolute;
+	background: url('../images/graphic2_v2.png') 0px 0px no-repeat;
+	background-size: 100%;
+		width: 272px;
+		height: 272px;
+		top: 14%;
+	    right: -4%;
+	    opacity: 0.25;
+	}
+	.resources {
+		padding: 60px 35px;
+	}
+	.resources:before {
+		
+	}
+	.multitab-widget-content header {
+	    margin: 40px 0;
+	}
+	.multitab-widget-content header h2 {
+		font-size: 24px;
+	}
+	.advice_article_block h3 {
+		display: block;
+		font-size: 15px;
+	}
+	.advice_article_block {
+		padding: 15px 0; 
+		overflow: hidden;
+	}
+	.advice_grid li {
+		margin-bottom: 60px;
+	}
+	.advice_grid li:nth-child(4) {
+		margin: 0;
+	}
+	.advice_grid li img {
+		width: 100%;
+	}
+	.resource_article .intro_content {
+		width: 100%;
+		padding: 0 35px;
+	}	
+	.news .intro_section:before,
+	.advice .intro_section:before {
+		content: "";
+	position: absolute;
+	background: url('../images/graphic2.svg') 0px 0px no-repeat;
+	background-size: 100%;
+		width: 290px;
+		height: 290px;
+		    top: 11%;
+   		right: -9%;
+	    opacity: 0.5;
+	    
+	}
+	.advice .intro_section {
+		padding-top: 40px;
+	}
+	.news .intro_section:after,
+	.advice .intro_section:after {
+		
+		width: 290px;
+		height: 290px;
+		bottom: 10%;
+	    left: 4%;
+	    opacity: 0.5;
+	    
+	}
+	.advice_article img {
+		width: 100%;
+		display: block;
+	}
+	.news_grid .news_article_block {
+		padding-left: 0;
+		padding-top: 15px;
+	}
+	.download_case_study .download p {
+		margin: 30px 0;
+		padding: 0;
+		display: block;
+	}
+}

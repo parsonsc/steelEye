@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.762 472.066">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 70px;
+      }
+
+      .cls-1 {
+        stroke: #3dc291;
+      }
+
+      .cls-2 {
+        stroke: #adadad;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_6_1" data-name="Symbol 6 – 1" transform="translate(-948.619 -1403)">
+    <path id="Path_198" data-name="Path 198" class="cls-1" d="M199.426,20A189.426,189.426,0,1,0,388.852,209.426" transform="translate(1396.381 1836.852) rotate(180)"/>
+    <path id="Path_199" data-name="Path 199" class="cls-2" d="M291.326,199.426C291.326,94.963,206.595,10,101.9,10" transform="translate(1274.945 1850.066) rotate(180)"/>
+  </g>
+</svg>

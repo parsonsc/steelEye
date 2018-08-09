@@ -1,0 +1,505 @@
+.background_animation {
+
+}
+
+.homepage_animation {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+  z-index: 0;
+}
+@media only screen and (max-width: 10000px) and (min-width: 2000px)  {
+
+
+
+}
+
+.homepage_animation ul li {
+
+}
+
+
+
+@keyframes circleone {
+  50% {
+    transform: translate(0%, 50%);
+  }
+}
+
+@keyframes circletwo {
+  50% {
+    transform: translate(30%, 45%);
+  }
+}
+
+@keyframes circlethree {
+  50% {
+    transform: translate(52%, -17%);
+  }
+}
+
+@keyframes circlefour {
+  50% {
+    transform: translate(100%, 124%);
+  }
+}
+
+@keyframes circlefive {
+  50% {
+    transform: translate(200%, -29%);
+  }
+}
+
+@keyframes circlesix {
+  50% {
+    transform: translate(183%, 25%);
+  }
+}
+
+@keyframes circleseven {
+  50% {
+    transform: translate(563%, 228%);
+  }
+}
+
+@keyframes circleeight {
+  50% {
+    transform: translate(303%, -45%);
+  }
+}
+
+@keyframes circlenine {
+  50% {
+    transform: translate(450%, 89%);
+  }
+}
+
+@keyframes circleten {
+  50% {
+    transform: translate(848%, 185%);
+  }
+}
+
+@keyframes circleeleven {
+  50% {
+    transform: translate(550%, 15%);
+  }
+}
+@keyframes circleetwelve {
+  50% {
+    transform: translate(1100%, 0%);
+  }
+}
+@keyframes circlethirteen {
+  50% {
+    transform: translate(600%, 50%);
+  }
+}
+@keyframes circlefourteen {
+  50% {
+    transform: translate(700%, 100%);
+  }
+}
+@keyframes circlefifteen {
+  50% {
+    transform: translate(500%, 80%);
+  }
+}
+
+@keyframes circlesixteen {
+  50% {
+    transform: translate(200%, -29%);
+  }
+}
+
+@keyframes circleseventeen {
+  50% {
+    transform: translate(703%, 43%);
+  }
+}
+
+@keyframes circleseighteen {
+  50% {
+    transform: translate(1863%, 128%);
+  }
+}
+
+@keyframes circlenineteen {
+  50% {
+    transform: translate(783%, -15%);
+  }
+}
+
+@keyframes circletwenty {
+  50% {
+    transform: translate(1190%, 109%);
+  }
+}
+
+.circle {
+	position: absolute; 
+	display: block;
+
+	img { width: 100%; height: auto; }
+}
+
+.homepage_animation .circle_01 {
+	width: 176px;
+    height: 176px;
+    position: absolute;
+	transform: translate(-31%, 17%);
+
+	animation: circleone 30s ease infinite;
+}
+
+.homepage_animation .circle_02 {
+	width: 298px;
+    height: 298px;
+    position: absolute;
+	transform: translate(10%, 15%);
+
+	animation: circletwo 25s ease infinite;
+}
+
+.homepage_animation .circle_03 {
+	width: 286px;
+    height: 286px;
+    position: absolute;
+	transform: translate(72%, -7%);
+
+	animation: circlethree 40s ease infinite;
+}
+
+.homepage_animation .circle_04 {
+	width: 286px;
+    height: 286px;
+    position: absolute;
+	transform: translate(200%, 54%);
+
+	animation: circlefour 50s ease infinite;
+}
+
+.homepage_animation .circle_05 {
+	width: 256px;
+    height: 256px;
+    position: absolute;
+	transform: translate(263%, 29%);
+
+	animation: circlefive 73s ease infinite;
+}
+.homepage_animation .circle_06 {
+	width: 286px;
+    height: 286px;
+    position: absolute;
+	transform: translate(283%, 25%);
+
+	animation: circlesix 60s ease infinite;
+}
+
+.homepage_animation .circle_07 {
+	width: 137px;
+    height: 137px;
+    position: absolute;
+	transform: translate(563%, 228%);
+
+	animation: circleseven 86s ease infinite;
+}
+
+.homepage_animation .circle_08 {
+	width: 306px;
+    height: 306px;
+    position: absolute;
+	transform: translate(343%, -5%);
+
+	animation: circleeight 46s ease infinite;
+}
+
+.homepage_animation .circle_09 {
+	width: 220px;
+    height: 220px;
+    position: absolute;
+	transform: translate(550%, 69%);
+
+	animation: circlenine 76s ease infinite;
+}
+
+.homepage_animation .circle_10 {
+	width: 161px;
+    height: 161px;
+    position: absolute;
+	    transform: translate(848%, 185%);
+
+	animation: circleten 44s ease infinite;
+}
+
+.homepage_animation .circle_11 {
+	width: 330px;
+    height: 330px;
+    position: absolute;
+	transform: translate(448%, 5%);
+
+	animation: circleeleven 80s ease infinite;
+}
+
+.homepage_animation .circle_12 {
+  width: 176px;
+    height: 176px;
+    position: absolute;
+  transform: translate(900%, 17%);
+
+  animation: circleetwelve 60s ease infinite;
+}
+
+.homepage_animation .circle_13 {
+  width: 298px;
+    height: 298px;
+    position: absolute;
+  transform: translate(500%, 20%);
+
+  animation: circlethirteen 75s ease infinite;
+}
+
+.homepage_animation .circle_14 {
+  width: 286px;
+    height: 286px;
+    position: absolute;
+  transform: translate(800%, 50%);
+
+  animation: circlefourteen 90s ease infinite;
+}
+.homepage_animation .circle_15 {
+  width: 286px;
+    height: 286px;
+    position: absolute;
+  transform: translate(900%, 0%);
+
+  animation: circlefifteen 150s ease infinite;
+}
+
+.homepage_animation .circle_16 {
+  width: 256px;
+    height: 256px;
+    position: absolute;
+  transform: translate(863%, 29%);
+
+  // animation: circlesixteen 73s ease infinite;
+}
+.homepage_animation .circle_17 {
+  width: 286px;
+    height: 286px;
+    position: absolute;
+  transform: translate(883%, 83%);
+
+  animation: circleseventeen 60s ease infinite;
+}
+
+.homepage_animation .circle_18 {
+  width: 137px;
+    height: 137px;
+    position: absolute;
+  transform: translate(1563%, 228%);
+
+  animation: circleeighteen 86s ease infinite;
+}
+
+.homepage_animation .circle_19 {
+  width: 306px;
+    height: 306px;
+    position: absolute;
+  transform: translate(903%, -45%);
+
+  animation: circlenineteen 46s ease infinite;
+}
+
+.homepage_animation .circle_20 {
+  width: 220px;
+    height: 220px;
+    position: absolute;
+  transform: translate(1370%, 69%);
+
+  // animation: circletwenty 76s ease infinite;
+}
+
+
+// accordion_animation
+.accordion_animation {
+
+}
+.accordion_animation .circle_01 {
+	width: 176px;
+    height: 176px;
+    position: absolute;
+	transform: translate(-31%, 17%);
+
+	animation: circleone 30s ease infinite;
+}
+
+.accordion_animation .circle_02 {
+	width: 298px;
+    height: 298px;
+    position: absolute;
+	transform: translate(10%, 15%);
+
+	animation: circletwo 25s ease infinite;
+}
+
+.accordion_animation .circle_03 {
+	width: 286px;
+    height: 286px;
+    position: absolute;
+	transform: translate(72%, -7%);
+
+	animation: circlethree 40s ease infinite;
+}
+
+.accordion_animation .circle_04 {
+	width: 286px;
+    height: 286px;
+    position: absolute;
+	transform: translate(200%, 54%);
+
+	animation: circlefour 50s ease infinite;
+}
+
+.accordion_animation .circle_05 {
+	width: 256px;
+    height: 256px;
+    position: absolute;
+	transform: translate(263%, 29%);
+
+	animation: circlefive 73s ease infinite;
+}
+.accordion_animation .circle_06 {
+	width: 286px;
+    height: 286px;
+    position: absolute;
+	transform: translate(283%, 25%);
+
+	animation: circlesix 60s ease infinite;
+}
+
+.accordion_animation .circle_07 {
+	width: 137px;
+    height: 137px;
+    position: absolute;
+	transform: translate(563%, 228%);
+
+	animation: circleseven 86s ease infinite;
+}
+
+.accordion_animation .circle_08 {
+	width: 306px;
+    height: 306px;
+    position: absolute;
+	transform: translate(343%, -5%);
+
+	animation: circleeight 46s ease infinite;
+}
+
+.accordion_animation .circle_09 {
+	width: 220px;
+    height: 220px;
+    position: absolute;
+	transform: translate(550%, 69%);
+
+	animation: circlenine 76s ease infinite;
+}
+
+.accordion_animation .circle_10 {
+	width: 161px;
+    height: 161px;
+    position: absolute;
+	    transform: translate(848%, 185%);
+
+	animation: circleten 44s ease infinite;
+}
+
+.accordion_animation .circle_11 {
+	width: 330px;
+    height: 330px;
+    position: absolute;
+	transform: translate(448%, 5%);
+
+	animation: circleeleven 80s ease infinite;
+}
+
+
+@keyframes accordion12 {
+  50% {
+    transform: translate(888%, 50%);
+  }
+}
+@keyframes accordion13 {
+  50% {
+    transform: translate(600%, 58%);
+  }
+}
+@keyframes accordion14 {
+  50% {
+    transform: translate(600%, 58%);
+  }
+}
+@keyframes accordion15 {
+  50% {
+    transform: translate(600%, 58%);
+  }
+}
+@keyframes accordion16 {
+  50% {
+    transform: translate(653%, 5%);
+  }
+}
+
+
+//
+.accordion_animation .circle_12{
+  width: 176px;
+  height: 176px;
+  position: absolute;
+  transform: translate(721%, 17%);
+
+  animation: accordion12 80s ease infinite;
+}
+
+.accordion_animation .circle_13 {
+  width: 298px;
+    height: 298px;
+    position: absolute;
+  transform: translate(450%, 88%);
+
+  animation: accordion13 25s ease infinite;
+}
+
+.accordion_animation .circle_14 {
+  width: 286px;
+    height: 286px;
+    position: absolute;
+  transform: translate(872%, -7%);
+
+  animation: accordion14 100s ease infinite;
+}
+.accordion_animation .circle_15 {
+  width: 286px;
+    height: 286px;
+    position: absolute;
+  transform: translate(200%, 54%);
+
+  animation: accordion15 90s ease infinite;
+}
+.accordion_animation .circle_16 {
+  width: 306px;
+    height: 306px;
+    position: absolute;
+  transform: translate(753%, 75%);
+
+  animation: accordion16 46s ease infinite;
+}
+
+
+
+@include respond-to(mobile) {
+  .homepage_animation,
+  .accordion_animation {
+    display: none;
+  }
+}

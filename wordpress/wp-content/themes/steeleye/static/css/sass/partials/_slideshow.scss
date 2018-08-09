@@ -1,0 +1,312 @@
+// SteelEye
+// Slideshow 
+
+
+// Homepage carousel - Hero banner
+.slideshow {
+	background: $blue;
+  // background: url('../images/hp_banner.jpg') 0 0 no-repeat;
+  background-size: cover;
+	height: auto;
+  padding: 123px 0 40px;
+}
+
+.demo-wrap { margin-top: 60px; }
+
+.demo-wrap .demo {
+  // width: 1000px;
+  // height: 450px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-user-select: none;
+}
+
+.slide-wrap {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-wrap li {
+  display: none;
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.slide-wrap .inner {
+  	position: relative;
+  	border-radius: 50%;
+  	background-image: url('../images/circle.png');
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+  	width: 100%;
+	height: 100%;
+
+}
+
+.slide-wrap .inner a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.slide-wrap .inner p {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family: $din_bold;
+  color: white;
+  line-height: 1.3;
+}
+.slide-wrap .pos1 .inner p {
+  font-size: 20px;
+}
+.slide-wrap img {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.slide-wrap .pos1 {
+  display: block;
+  width: 180px;
+  height: 180px;
+  top: 60px;
+  left: 6%;
+  z-index: 1;
+  
+}
+
+.slide-wrap .pos2 {
+  display: block;
+  width: 254px;
+  height: 254px;
+  top: 35px;
+  left: 215px;
+  z-index: 2;
+}
+
+.slide-wrap .pos3 {
+  display: block;
+  width: 325px;
+  height: 325px;
+  top: 0;
+  left: 35%;
+  z-index: 3;
+}
+
+.slide-wrap .pos4 {
+  display: block;
+  width: 254px;
+  height: 254px;
+  top: 35px;
+  right: 20%;
+  z-index: 2;
+}
+
+.slide-wrap .pos5 {
+  display: block;
+  width: 180px;
+  height: 180px;
+  top: 60px;
+  right: 6%;
+  z-index: 1;
+}
+
+.slide-wrap .inner {
+  overflow: hidden;
+  position: relative;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  position: absolute;
+  top: 115px;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+}
+
+.prev {
+  left: 0;
+  background-position: 0px 0px;
+}
+
+.next {
+  right: 0;
+  background-position: -52px 0px;
+}
+.carousel_arrow img {
+  width: 25px;
+}
+
+
+@include respond-to(mobile) { 
+  
+  .slideshow {
+    padding: 80px 0 80px;
+  }
+
+}
+
+
+.carousel_wrap { 
+  height:430px;
+  position:relative;
+  margin-bottom:30px;
+  z-index: 5;
+}
+
+/*--water_whjeel_carousel--*/
+#carousel img { 
+  opacity:0;
+  width:325px;
+  height:325px;
+}
+#carousel {
+  width:1200px;
+  margin:0px auto;
+  margin-top:50px;
+  height:390px;
+  position:relative;
+  clear:both;
+  overflow:hidden;
+}
+#carousel > div {
+  visibility:hidden;
+  cursor:pointer;
+}
+#carousel .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+  background-image: url(../images/circle.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.carous_item { 
+  position:absolute;
+  height:100%;
+  width:100%;
+  padding:0px 15px;
+  box-sizing:border-box;
+  display:block;
+}
+.carous_desc { 
+  position:absolute;
+  display:block;
+  text-align:center;
+  font-size:40px;
+  line-height: 1.3;
+  height:50%;
+  width: 80%;
+  @include din_bold;
+  line-height:40px;
+  padding:0px;
+  padding-left:0px;
+  color:#fff;
+  margin: 0 auto 15px;
+  top:25%;
+  left: 10%;
+  @include transition(all 0.2s ease-in-out);
+}
+.carous_desc:hover {
+  opacity: 0.7;
+}
+.carous_desc:before {
+  content: "";
+  position: absolute;
+  background: url('../images/layout/slide_plus.png') 0px 0px no-repeat;
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+  bottom: 0%;
+  left: 48%;
+}
+.carousel_wrap .nav_button { 
+  position:absolute;
+  left:0px;
+  top:50%;
+  margin-top:-30px;
+  height:60px;
+  width:30px;
+  right:0px;
+  font-size:40px;
+  font-weight:600;
+  color:#F00;
+  cursor:pointer;
+  display:inline-block;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  transition:all 0.3s ease;
+}
+.carousel_wrap .nav_button.prev_button { 
+  left:50px;
+}
+.carousel_wrap .nav_button.next_button { 
+  
+  left:auto;
+  right:50px;
+}
+
+
+
+
+
+
+
+.carousel_controls {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.carousel_controls .next {
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

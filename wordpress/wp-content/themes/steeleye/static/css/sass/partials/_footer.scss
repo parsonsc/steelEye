@@ -1,0 +1,191 @@
+// SteelEye
+// Footer Styles 
+
+.site_footer {
+	background: $blue;
+	overflow: hidden;
+	padding: 0 0 60px;
+	position: relative; 
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.site_footer a {
+	@include transition(all 0.2s ease-in-out);	
+}
+// Footer content
+.site_footer .footer_content {
+	padding: 60px 0 50px;
+}
+
+// Footer logo 
+.site_footer .footer_logo img {
+	width: 160px;
+}
+
+// Footer menu
+.site_footer .footer_menu {
+
+}
+.site_footer .footer_menu ul li {
+	display: block;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.site_footer .footer_menu ul li a {
+	font-family: $din_bold;
+	color: $white;
+	font-weight: 700;
+}
+// Company info 
+.site_footer .company_info {
+	font-size: 14px;
+}
+.site_footer .company_info .sales {
+	margin-top: 35px;
+}
+.site_footer .company_info p.title {
+	font-family: $din_bold;
+	color: $white;
+	font-weight: 700;
+	margin: 0;
+	padding: 0 0 15px;
+	clear: both;
+	display: block;
+}
+.site_footer .company_info a {
+	color: $white;
+	display: block;
+	@include transition(all 0.2s ease-in-out);	
+}
+
+// Social 
+.site_footer .footer_social {
+	margin-top: 35px;
+}
+.site_footer .footer_social a {
+	font-size: 20px;
+	padding-right: 10px;
+	@include transition(all 0.2s ease-in-out);	
+	display: inline-block;
+}
+.site_footer .footer_social a:hover {
+	opacity: 0.7;
+}
+
+// Subav
+.site_footer .footer_subnav {
+	color: $darkgrey;
+	font-size: 12px;
+}
+.site_footer .footer_subnav .copyright,
+.site_footer .footer_subnav .copyright p {
+	font-size: 12px;
+	color: $darkgrey;
+}
+.site_footer .footer_subnav .copyright p {
+	margin: 0;
+}
+.site_footer .footer_subnav .subnav_nav ul {
+	float: right;
+}
+.site_footer .footer_subnav .subnav_nav ul li {
+	display: inline-block;
+	padding-right: 20px;
+}
+.site_footer .footer_subnav .subnav_nav ul li:last-child {
+	padding-right: 0;
+}
+.site_footer .footer_subnav .subnav_nav ul li a {
+	color: $darkgrey;
+	@include transition(all 0.2s ease-in-out);
+}
+
+
+
+@include respond-to(tablet) {
+	
+}
+
+
+@include respond-to(mobile) { 
+	.site_footer {		
+		padding: 0 0 60px;
+		position: relative; 
+	}
+	.site_footer .footer_content {
+		padding: 60px 35px 50px;
+	}
+
+	// Footer logo 
+	.site_footer .footer_logo  {
+		margin-bottom: 30px;
+	}
+
+	// Footer menu
+	.footer_menu_container {
+		padding: 0;
+		overflow: hidden;
+		margin-bottom: 35px;
+	}
+	.site_footer .footer_menu {
+		width: 50%;
+		display: block;
+		float: left;
+		padding: 0;
+	}
+
+	// Company info 
+	.site_footer .company_info {
+	    clear: both;
+	    padding: 30px 0;
+	}
+	.site_footer .company_info .col-md-6 {
+		display: block;
+		overflow: hidden;
+		clear: both;
+	}
+	.site_footer .company_info .sales {
+	    margin-top: 0px;
+	}
+	.site_footer .company_info a {
+		display: block;
+	}
+	.site_footer .company_info .office_info {
+		width: 50%;
+		float: left;
+	}
+
+	// Subav
+	.site_footer .footer_subnav .copyright p {
+		margin: 0 0 15px;
+	}
+	.site_footer .footer_subnav .subnav_nav ul {
+	    float: left;
+	}
+	.site_footer .footer_subnav .subnav_nav ul li {
+	    display: block;
+	    padding-right: 0;
+	    width: 49%;
+	    float: left;
+	}
+
+	// Social 
+	.site_footer .footer_social {
+		margin-top: 30px;
+	}
+	.site_footer .footer_social a {
+		display: inline-block;
+	}
+	
+	// Copyright
+	.site_footer .footer_subnav .copyright {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	
+	.site_footer .footer_equal_height {
+		height: auto!important;
+	}
+	
+}

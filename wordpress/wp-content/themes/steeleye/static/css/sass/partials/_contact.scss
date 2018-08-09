@@ -1,0 +1,123 @@
+// SteelEye
+// Contact Page Styling
+
+// Contact intro block
+.contact_intro {
+	padding-top: 60px;
+	position: relative;
+}
+.contact_intro .intro_content {
+	width: 620px;
+	margin: 0 auto;
+	z-index: 5;
+	position: relative;
+}
+.contact_intro .intro_content h2 {
+	font-family: $din;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.contact_intro .intro_content p {
+	margin-bottom: 10px;
+}
+.contact_intro .intro_content a {
+	color: $blue;
+	text-decoration: underline;
+	@include din_bold;
+}
+.contact_intro .piechart {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 18%;
+	right: 4%;
+	z-index: 1;
+}
+
+
+// Office location block
+.location {
+	margin-bottom: 40px;
+}
+.office_locations {
+	overflow: hidden;
+	background: $bg_grey;
+}
+.office_locations header {
+	padding: 0 0 80px;
+}
+.office_locations h2 {
+	margin: 0;
+	font-size: 30px;
+}
+.office_locations .location_info {
+	padding: 25px 0 0;
+	color: $blue;
+}
+.office_locations .location_info h3 {
+	margin-bottom: 20px;
+}
+.office_locations .location_info p {
+	margin-bottom: 5px;
+}
+.office_locations .location_info a.google_link {
+	color: $blue;
+	text-decoration: underline;
+	margin: 25px 0 0;
+	display: block;
+	@include din_bold;
+}
+
+// Contact us form 
+.contact_form .form_wrapper {
+	width: 825px;
+	margin: 0 auto;
+}
+.contact_form .form_wrapper h2 {
+	font-size: 30px;
+	color: $blue;
+}
+
+
+// Tablet Styles
+@include respond-to(tablet) {
+	
+}
+
+// Mobile Styles
+@include respond-to(mobile) { 
+	// Contact intro block
+	.contact_intro .intro_content {
+		width: 100%;
+		padding: 0 35px;
+	}
+	
+	// Office location block
+	.office_locations .location {
+		margin-bottom: 25px;
+	}
+	.office_locations header {
+		padding: 0 35px 40px;
+	}
+	.office_locations header h2 {
+		font-size: 30px;
+	}
+	.office_locations .location_info .address {
+		height: auto!important;
+	}
+
+	// Contact us form 
+	.contact_form .form_wrapper {
+		width: 100%;
+		padding: 0 35px;
+		margin: 0 auto;
+	}
+	.contact_form .form_wrapper h2 {
+		font-size: 24px;
+	}
+	.contact_form .form_wrapper .form_item {
+		padding: 0;
+	}
+
+}
+

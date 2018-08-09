@@ -1,0 +1,26 @@
+// SteelEye
+// Demo Styles
+
+// Demo banner 
+.demo_banner {
+	z-index: 10;
+	position: relative;
+}
+.demo_banner a {
+	background: $yellow;
+	padding: 45px 0;
+	@include transition(all 0.2s ease-in-out);
+	color: $blue;
+  	font-family: $din_bold;
+  	font-weight: 700;
+  	font-size: 40px;
+  	margin: 0 auto;
+  	display: block;
+  	text-align: center;
+  	border-radius: 0;
+}
+.demo_banner a:hover {
+	opacity: 0.7;
+	background: $yellow;
+	text-decoration: none;
+}

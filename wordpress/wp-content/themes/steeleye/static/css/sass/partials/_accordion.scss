@@ -1,0 +1,312 @@
+/*
+SCSS variables and mixins
+*/
+* {
+    box-sizing: border-box;
+}
+$color__active: grey;
+$breakpoint: 800px;
+@mixin tab-active() {
+  background: $green;
+  color: $blue;
+}
+
+
+.tabbed-content {
+  background: $blue;
+  max-width: 840px;
+  padding: 60px;
+  border-radius: 5px;
+}
+.tabs {
+  ul {
+    margin: 0;
+    padding: 0 0 1em 0;
+    font-weight: bold;
+    li {
+      background: transparent;
+      a {
+        padding: .5em 1em;
+        color: $white;
+        @include transition(all 0.2s ease-in-out);
+        
+        &.active {
+          @include tab-active();
+          border-radius: 5px;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    } 
+  }
+}
+.item {
+  margin-bottom: 2px;
+  &::before {
+    cursor: pointer;
+    font-weight: bold;
+    // background: #eee;
+    padding: .5em;
+    display: block;
+  }
+  &.active {
+    &::before {
+      @include tab-active();
+    }
+    .item-content {
+      padding: 1em;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+      color: white;
+    }
+  }
+}
+@media all and (min-width: $breakpoint ) {
+  .item {
+    &.active {
+      .item-content {
+        padding-top: 0;
+      }  
+    }
+  }
+  .tabs-side {
+    .tabs {
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+/* 
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+
+// Accordion for small screens (mobile first principle)
+.tabbed-content {
+  .tabs {
+    display: none;
+  }
+  .item {
+    min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
+    &::before {
+      content: attr(data-title); // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+    }
+    .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want. 
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+    &.active {
+      .item-content {
+        opacity: 1;
+        visibility: visible;
+        height:auto;
+
+        a {
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }  
+}
+
+
+// Tabs for larger screens
+@media all and (min-width: $breakpoint) {
+  .tabbed-content {
+    .tabs {
+      display: block;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+        }
+      }
+    }
+    .item {
+      min-height: 0;
+      &::before {
+        display: none;
+      }
+    }
+    // Tabs on the side (works only on big screens)
+    &.tabs-side {
+      .tabs {
+        width: 295px;
+        float: left;
+        li {
+          display: block;
+        }
+      }
+      .item {
+        margin-left: 295px;
+      }
+    }  
+  }
+}
+
+/////
+
+
+
+.mobile_accordion {
+  padding: 40px 0 0;
+}
+.mobile_accordion h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.ac-container{
+  width: 80%;
+  margin: 10px auto 30px auto;
+  text-align: left;
+}
+.ac-container label{
+  padding: 5px 0  0;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  // height: 30px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  @include din_bold;
+  font-weight: normal;
+  
+}
+.ac-container label:before {
+  content: "";
+  position: absolute;
+    background: url('../images/layout/accordion.svg') 0px 0px no-repeat;
+    background-size: 100%;
+    width: 19px;
+    height: 13px;
+    top: 5px;
+    right: 0%;
+    transform:          rotate(180deg);
+    -ms-transform:      rotate(180deg);
+    -moz-transform:     rotate(180deg);
+    -webkit-transform:  rotate(180deg);
+    -o-transform:       rotate(180deg);
+}
+.ac-container input:checked + label:before{
+  transform:          rotate(0deg);
+    -ms-transform:      rotate(0deg);
+    -moz-transform:     rotate(0deg);
+    -webkit-transform:  rotate(0deg);
+    -o-transform:       rotate(0deg);
+}
+.ac-container input{
+  display: none;
+}
+.ac-container article{
+ 
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  -ms-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+.ac-container article p{
+  color: white!important;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 0px 20px 20px 0;
+}
+.ac-container article p a {
+  color: $blue;
+}
+.ac-container input:checked ~ article{
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+.ac-container input:checked ~ article.ac-small{
+  height: auto;
+}
+.ac-container input:checked ~ article.ac-medium{
+  height: 300px;
+}
+.ac-container input:checked ~ article.ac-large{
+  height: 300px;
+}
+
+.ac-container .ac-small a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+// Tablet Styles
+@include respond-to(tablet) {
+  
+}
+
+// Mobile Styles
+@include respond-to(mobile) { 
+  .tabbed-content .item {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .tabbed-content {
+    background: $blue;
+    max-width: 100%;
+    padding: 40px 35px;
+    border-radius: 5px;
+  }
+  .item.active::before {
+    background: $blue;
+    color: white;
+  }
+  .item::before {
+    color: white;
+    font-size: 20px;
+    padding: 0;
+  }
+  .item::after {
+    content: "";
+    position: absolute;
+    background: url('../images/layout/accordion.svg') 0px 0px no-repeat;
+    background-size: 100%;
+    width: 19px;
+    height: 13px;
+    top: 5px;
+    right: 0%;
+    transform:          rotate(180deg);
+    -ms-transform:      rotate(180deg);
+    -moz-transform:     rotate(180deg);
+    -webkit-transform:  rotate(180deg);
+    -o-transform:       rotate(180deg);
+  }
+  .item.active:after {
+    transform:          rotate(0deg);
+    -ms-transform:      rotate(0deg);
+    -moz-transform:     rotate(0deg);
+    -webkit-transform:  rotate(0deg);
+    -o-transform:       rotate(0deg);
+  }
+  .item.active .item-content {
+    padding: 20px 0;
+  }
+}

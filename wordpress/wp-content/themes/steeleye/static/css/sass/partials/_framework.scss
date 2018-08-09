@@ -1,0 +1,267 @@
+// STEELEYE
+// FRAMEWORK STYLESHEET
+
+#mfPreviewBar {
+	display: none!important;
+}
+html, 
+body, 
+.site-content {
+	// padding: 0;
+	// margin: 0;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+	// width: 100%;
+	// height: auto;
+}
+.content {
+	position: relative;
+}
+body {
+	// padding-top: 120px;
+	font-size: 15px;
+}
+p {
+	font-size: 15px;
+}
+a {
+	text-decoration: none;
+	// color: $black;
+}
+a:visited {
+	// color: $black!important;
+}
+a:visited {
+	// color: black;
+}
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+.mobile_only {
+	display: none!important;
+}
+.hentry {
+	margin: 0 0!important;
+}
+.right {
+	float: right;
+}
+.os-animation{
+  opacity: 0;
+}
+.os-animation.animated{
+    opacity: 1;
+}
+.mobile_only {
+	display: none;
+}
+.nopadding {
+	padding: 0!important;
+}
+.piechart {
+	z-index: -1;
+}
+// Site container
+.site_container {
+	min-height: 100%;
+	display: block;
+	width: 100%;
+	font-family: $din;
+	color: $blue;
+
+}
+.site-content {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.inner_content {
+	width: 100%;
+	// max-width: 1245px;
+	margin: 0 auto;
+}
+
+.main_content {
+	
+}
+.component {
+	padding: 100px 0;
+}
+
+// Cookie 
+#catapult-cookie-bar {
+	background: $cookie_grey;
+	color: $blue;
+	font-size: 14px;
+	bottom: auto!important;
+}
+.cookie-bar-bar .ctcc-inner {
+	display: block;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-size: 15px;
+}
+#catapult-cookie-bar a {
+	@include din_bold;
+	text-decoration: underline;
+}
+span.ctcc-left-side {
+	margin-top: 5px;
+	display: inline-block;
+}
+button#catapultCookie {
+	background: url(../images/layout/close_blue.svg) 0 0 no-repeat!important;
+	text-indent: -200000px;
+	width: 32px;
+	height: 32px;
+	background-size: 100%;
+	float: right;
+}
+
+// cta 
+.cta {
+	@include cta;
+}
+.cta.cta_blue {
+	@include cta;
+	background: $cyan;
+	color: white;
+	padding: 10px 16px;
+}
+.cta.cta_blue:hover {
+	background: $cyan;
+	background: rgba(51, 172, 227, 0.8);
+}
+
+
+// Backgrounds
+.bubble_bg {
+	background: url(../images/layout/bubble_bg.png) 0 0 no-repeat;
+}
+
+
+// Show menu 
+.content {
+	@include transition(all 0.3s ease-in-out);
+}
+.show-menu .content {
+	// background: rgba(0,0,0, 0.8);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	@include transition(all 0.3s ease-in-out);
+}
+
+.show-menu .content-wrap:before {
+	background: #1A2141;
+	content: "";
+	width: 100%;
+	height: 150%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	opacity: 0.5;
+}
+
+
+
+
+@include respond-to(tablet) {
+	
+}
+
+@include respond-to(mobile) {
+	.desktop_only {
+		display: none;
+	}
+	.mobile_only {
+		display: block!important;
+	}
+	.row {
+		margin: 0;
+	}
+	.nopaddingmobile {
+		padding: 0!important;
+	}
+	.nopadding {
+		// padding: 0 15px!important;
+	}
+
+	.component {
+		padding: 80px 0;
+	}
+
+	// Cookie 
+	.ctcc-left-side {
+	    margin: 0;
+	    width: 80%;
+	    display: inline-block;
+	    padding: 0;
+	    margin-top: 0;
+	}
+	.span.ctcc-left-side {
+		margin-top: 0!important;
+	}
+	.cookie-bar-bar button#catapultCookie {
+	    margin: 3px 0 0 20px;
+	}
+	span.ctcc-left-side {
+	    margin-top: 0px!important;
+	    display: inline-block;
+	}
+
+
+		
+}
+
+
+/* Pagination */
+.pagination {
+    clear:both;
+    position:relative;
+    font-size:14px; /* Pagination text size */
+    line-height:16px;
+    float:right; /* Pagination float direction */
+}
+ 
+.pagination span, .pagination a {
+    display:block;
+    float:left;
+    margin: 2px 2px 2px 0;
+    padding:6px 9px 5px 9px;
+    text-decoration:none;
+    width:auto;
+    color: $blue; /* Pagination text color */
+    background: transparent;
+    -webkit-transition: background .15s ease-in-out;
+    -moz-transition: background .15s ease-in-out;
+    -ms-transition: background .15s ease-in-out;
+    -o-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+ 
+.pagination a:hover{
+    color: $blue;
+
+}
+ 
+.pagination .current{
+    padding:6px 9px 5px 9px;
+    background: transparent;
+    color: $blue;
+}
+
+
+
+

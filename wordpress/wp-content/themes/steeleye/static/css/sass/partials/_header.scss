@@ -1,0 +1,294 @@
+// Steel Eye
+// Header
+
+header.site_header {
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 35px 60px;
+	z-index: 15;
+	// background: $blue;
+	@include transition(all 0.4s ease-in-out);
+}
+header.site_header:before {
+	// content:"";
+	// width: 100%;
+	// height: 100%;
+	// background: $blue;
+}
+// Homepahe header 
+.home header.site_header {
+	background: transparent;
+	@include transition(all 0.4s ease-in-out);
+}
+// Basic page & 404
+.error404 header.site_header,
+.page-template-basic header.site_header {
+	background: $blue;
+	padding: 25px 60px;
+}
+
+
+header.site_header.sticky {
+	background: $blue;
+	padding: 25px 60px;
+	@include transition(all 0.4s ease-in-out);
+}
+header.site_header .container {
+	position: relative;
+}
+// Site logo
+header.site_header .site_logo {
+	float: left;
+	width: 160px;
+}
+header.site_header .site_logo img {
+	width: 100%;
+}
+// Header menu
+header.site_header .header_menu {
+	float: right;
+	margin-right: 140px;
+	width: 280px;
+}
+header.site_header .header_menu ul {
+	margin-top: 15px;
+}
+header.site_header .header_menu li {
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 50px;
+}
+header.site_header .header_menu li:last-child {
+	margin-right: 0;
+}
+header.site_header .header_menu li a {
+	color: $white;
+}
+li.astm-search-menu {
+	// display: none!important;
+}
+
+// Demo butto
+.demo_btn {
+	@include cta;
+	border: none;
+	box-shadow: none;
+	float: left;
+	display: block;
+	margin-right: 50px;
+}
+.modal_login {
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 15px;
+}
+.modal_login:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+// header.site_header .header_menu li a {
+// 	@include cta;
+// 	display: block;
+// 	padding: 15px;
+// }
+
+.menu_nav {
+	margin-top: 110px;
+}
+.menu_nav li {
+	font-size: 24px;
+	font-family: $din_bold;
+	color: $white;
+	display: block;
+	position: relative;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+.menu_nav li a {
+	display: block;
+}
+.menu_nav li.dropdown a::before {
+	content: "";
+	background: url(../images/layout/dropdown_arrow_down.svg) 0 0 no-repeat;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 19px;
+	height: 13px;
+}
+
+.menu_nav li a {
+	color: $white;
+}
+li.menu-item-has-children a::before {
+	content: "";
+	background: url(../images/layout/dropdown_arrow_down.svg) 0 0 no-repeat;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 19px;
+	height: 13px;
+}
+li.clicked.menu-item-has-children a::before {
+	content: "";
+	background: url(../images/layout/dropdown_arrow_down.svg) 0 0 no-repeat;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 19px;
+	height: 13px;
+}
+li.clicked.menu-item-has-children.clicked a::before {
+	content: "";
+	background: url(../images/layout/dropdown_arrow_up.svg) 0 0 no-repeat;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 19px;
+	height: 13px;
+}
+.menu_nav li ul {
+	margin-top: 30px;
+	padding-left: 0;
+	display: none;
+}
+.menu_nav li ul.active {
+	display: block;
+}
+.menu_nav li ul li {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.sub-menu li a:before,
+li.clicked.menu-item-has-children.clicked a ul li a:before,
+.menu_nav li ul li a:before {
+	content: none!important;
+}
+
+// Header submnav 
+.header_subnav {
+	margin: 60px 0 0;
+}
+.header_subnav ul li {
+	font-size: 18px;
+	font-family: $din;
+	font-weight: 400;
+	margin: 0;
+	padding-bottom: 30px;
+}
+.header_subnav ul li:last-child {
+	// padding-bottom: 0;
+}
+
+// Subnav
+.subnav li {
+	margin-bottom: 30px;
+	display: block;
+	font-size: 18px;
+}
+.subnav li a {
+	color: white;
+}
+.mobile_subnav {
+	display: none;
+}
+.subnav li.demo {
+	@include cta;
+	display: inline-block;
+}
+.subnav li.demo a {
+	color: $blue;
+}
+
+
+
+.mobile_menu {
+	width:30px;
+	height:20px;
+	position:relative;
+	display:block;
+	float: right;
+	
+}
+.menu-button .menu_bars {
+	@include transition(all 0.2s ease-in-out);
+}
+
+.menu_bars {
+	margin: 10px;
+}
+.menu-button .line {
+	display:block;
+	background: $white;
+	width:30px;
+	height:5px;
+	position:absolute;
+	right: 0;
+}
+/*HAMBURGER LINES*/
+.menu-button .line.line-1 {
+	top:0;
+}
+.menu-button .line.line-2 {
+	top:50%;
+	width: 20px;
+}
+.menu-button.active .line-1 {
+	transform:translateY(10px) translateX(0) rotate(45deg);
+	-webkit-transform:translateY(10px) translateX(0) rotate(45deg);
+	-moz-transform:translateY(10px) translateX(0) rotate(45deg);
+}
+.menu-button.active .line-2 {opacity:0}
+
+
+.modal_demo {
+	float: left;
+	margin-right: 60px;
+}
+
+
+
+
+
+@include respond-to(tablet) {
+	
+}
+
+
+@include respond-to(mobile) { 
+	header.site_header {
+		// position: relative;
+		overflow: hidden;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding: 35px;
+		// background: $blue;
+		z-index: 999;
+	}
+	header.site_header.sticky {
+		background: $blue;
+		padding: 25px 35px;
+		@include transition(all 0.4s ease-in-out);
+	}
+	// Homepahe header 
+	.home header.site_header {
+		// background: $blue;
+	}
+
+	header.site_header .header_menu {
+		display: none;
+	}
+	.mobile_subnav {
+		display: block;
+	}	
+
+
+	
+}
